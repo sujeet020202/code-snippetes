@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie8 no-js" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9 no-js" lang="en"><![endif]-->
+<!--[if !IE]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]--><!-- start: HEAD -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Screen manager - Subscription</title>
+<!-- start: META -->
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="" name="description">
+<meta content="" name="author">
+<!-- end: META -->
+<!-- start: MAIN CSS -->
+<link rel="stylesheet" href="assets/bootstrap.css">
+<link rel="stylesheet" href="assets/font-awesome.css">
+</head>
+<!-- end: HEAD -->
+<!-- start: BODY -->
+<body class="navigation-small">
+<!-- Start: HEADER --> 
+<!-- start: HEADER --> 
+
+<!-- end: HEADER --><!-- end: HEADER --> 
+
+<!-- start: MAIN JAVASCRIPTS --> 
+
+<script src="assets/jquery_003.js"></script>
+<link rel="stylesheet prefetch" href="assets/font-awesome_002.css">
+<link rel="stylesheet" href="assets/pricing_table.css">
+<link rel="stylesheet" href="assets/animated.css">
+<link rel="stylesheet" href="iCheck/skins/all.css">
+<script src="iCheck/jquery.icheck.min.js"></script>
+<!-- end: MAIN JAVASCRIPTS --> 
+
+<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY --> 
+
+<!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY --> 
+
+<script src="assets/bootbox.js"></script> 
+<script>
+jQuery(document).ready(function(e) {
+    jQuery('.pacakage_url').click(function(e) {
+		var pacakage_url = jQuery(this).attr('pacakage-url');
+			bootbox.confirm("Your current subscription can be collapse. Are you sure to updgrade ?", function(result) {
+				if(result == true){
+					jQuery('#plan_'+pacakage_url).submit();
+					//window.location.href = pacakage_url;
+				}
+		 
+			}); 
+		
+	});
+	$('input').iCheck({
+	  handle: 'radio',
+	    radioClass: 'iradio_square-grey',
+	});
+});
+
+
+</script> 
+<!-- start: MAIN CONTAINER -->
+
+<div class="main-container"> 
+  <!-- start: SIDEBAR --> 
+  <!-- end: SIDEBAR --> 
+  <!-- start: PAGE -->
+  <div class="main-content">
+    <div style="min-height: 760px;" class="container"> 
+      <!-- start: PAGE HEADER --> 
+      <!-- start: PAGE TITLE & BREADCRUMB -->
+      <div class="row"> </div>
+      <!-- end: PAGE TITLE & BREADCRUMB --> 
+      <!-- end: PAGE HEADER --> 
+      
+      <!-- start: PAGE CONTENT -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="tab-content">
+            <div id="panel_edit_account" class="tab-pane in active">
+              <div class="row" id="pricing_table_example1">
+                <div class="container">
+                  <div class="row">
+                    <div class="pricing col-sm-3 green-pack active-pack">
+                      <div class="title"> Trial </div>
+                      <div class="thumbnail animated pulse infinite">
+                        <div> Free <br>
+                          <small style="font-size: 10px;"> for                     10                      day </small> </div>
+                      </div>
+                      <div class="content">
+                        <div class="variant_box">
+                          <form id="plan_4" action="#" method="post">
+                            <div class="sub-title">
+                              <label class="radio-inline">
+                            
+                                <input  class="square-grey" value="6" checked="checked" name="plan_4" type="radio">
+                             
+                              <i>10 day - <b>$0</b></i>
+                              </label>
+                            </div>
+                          </form>
+                        </div>
+                        <a pacakage-url="4" class="btn pacakage_url"> Subscribed </a>
+                        <ul>
+                          <li>
+                            <div class="fa fa-check"></div>
+                            Feature 1 </li>
+                          <li>
+                            <div class="fa fa-check"></div>
+                            Feature 2 </li>
+                          <li>
+                            <div class="fa fa-check"></div>
+                            Feature 3 </li>
+                          <li>
+                            <div class="fa fa-check"></div>
+                            Feature 4 </li>
+                          <li>
+                            <div class="fa fa-check"></div>
+                            Feature 5 </li>
+                          <li>
+                            <div class="fa fa-check"></div>
+                            Feature 6 </li>
+                          <li>
+                            <div class="fa fa-check"></div>
+                            Feature 7 </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="pricing col-sm-3 blue-pack ">
+                      <div class="title"> starter </div>
+                      <div class="thumbnail animated pulse infinite">
+                        <div> <span class="symbol">$</span> 10 <br>
+                          <small style="font-size: 10px;"> per                                           month </small> </div>
+                      </div>
+                      <div class="content">
+                        <div class="variant_box">
+                          <form id="plan_1" action="#" method="post">
+                            <div class="sub-title">
+                              <label class="radio-inline">
+                            
+                                <input  class="square-grey" value="1" checked="checked" name="plan_1" type="radio">
+                              <i>3 month - <b>$10</b></i>
+                              </label>
+                            </div>
+                            <div class="sub-title">
+                              <label class="radio-inline">
+                             
+                                <input  class="square-grey" value="2" name="plan_1" type="radio">
+                              <i>6 month - <b>$30</b></i>
+                              </label>
+                            </div>
+                            <div class="sub-title">
+                              <label class="radio-inline">
+                              
+                                <input class="square-grey" value="7" name="plan_1" type="radio">
+                              <i>12 month - <b>$55</b></i>
+                              </label>
+                            </div>
+                          </form>
+                        </div>
+                        <a pacakage-url="1" class="btn pacakage_url"> Subscribe Now </a>
+                        <ul>
+                          <li>
+                            <div class="fa fa-close"></div>
+                            Feature 1 </li>
+                          <li>
+                            <div class="fa fa-check"></div>
+                            Feature 2 </li>
+                          <li>
+                            <div class="fa fa-close"></div>
+                            Feature 3 </li>
+                          <li>
+                            <div class="fa fa-close"></div>
+                            Feature 4 </li>
+                          <li>
+                            <div class="fa fa-close"></div>
+                            Feature 5 </li>
+                          <li>
+                            <div class="fa fa-close"></div>
+                            Feature 6 </li>
+                          <li>
+                            <div class="fa fa-close"></div>
+                            Feature 7 </li>
+                         
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="pricing col-sm-3 silver-pack ">
+                      <div class="title"> regular </div>
+                      <div class="thumbnail animated pulse infinite">
+                        <div> <span class="symbol">$</span> 49 <br>
+                          <small style="font-size: 10px;"> per                     6                      month </small> </div>
+                      </div>
+                      <div class="content">
+                        <div class="variant_box">
+                          <form id="plan_2" action="#" method="post">
+                            <div class="sub-title">
+                              <label class="radio-inline">
+                              
+                                <input class="square-grey" value="4" checked="checked" name="plan_2" type="radio">
+                              <i>3 month - <b>$30</b></i>
+                              </label>
+                            </div>
+                            <div class="sub-title">
+                              <label class="radio-inline">
+                             
+                                <input  class="square-grey" value="8" name="plan_2" type="radio">
+                              <i>6 month - <b>$60</b></i>
+                              </label>
+                            </div>
+                            <div class="sub-title">
+                              <label class="radio-inline">
+                              
+                                <input  class="square-grey" value="9" name="plan_2" type="radio">
+                              <i>12 month - <b>$99</b></i>
+                              </label>
+                            </div>
+                          </form>
+                        </div>
+                        <a pacakage-url="2" class="btn pacakage_url"> Subscribe Now </a>
+                        <ul>
+                          <li>
+                            <div class="fa fa-check"></div>
+                            Feature 1 </li>
+                          <li>
+                            <div class="fa fa-check"></div>
+                            Feature 2 </li>
+                          <li>
+                            <div class="fa fa-close"></div>
+                            Feature 3 </li>
+                          <li>
+                            <div class="fa fa-check"></div>
+                            Feature 4 </li>
+                          <li>
+                            <div class="fa fa-close"></div>
+                            Feature 5 </li>
+                          <li>
+                            <div class="fa fa-close"></div>
+                            Feature 6 </li>
+                          <li>
+                            <div class="fa fa-check"></div>
+                            Feature 7 </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="pricing col-sm-3 orange-pack ">
+                      <div class="title"> Ultimate </div>
+                      <div class="thumbnail animated pulse infinite">
+                        <div> <span class="symbol">$</span> 99 <br>
+                          <small style="font-size: 10px;"> per                                           year </small> </div>
+                      </div>
+                      <div class="content">
+                        <div class="variant_box">
+                          <form id="plan_3" action="#" method="post">
+                            <div class="sub-title">
+                              <label class="radio-inline">
+                             
+                                <input  class="square-grey" value="5" name="plan_3" type="radio">
+                              <i>3 month - <b>$49</b></i>
+                              </label>
+                            </div>
+                            <div class="sub-title">
+                              <label class="radio-inline">
+                              
+                                <input class="square-grey" value="10" name="plan_3" type="radio">
+                              <i>6 month - <b>$99</b></i>
+                              </label>
+                            </div>
+                            <div class="sub-title">
+                              <label class="radio-inline">
+                              
+                                <input checked="checked" class="square-grey" value="11" name="plan_3" type="radio">
+                                
+                              <i>12 month - <b>$139</b></i>
+                              </label>
+                            </div>
+                          </form>
+                        </div>
+                        <a pacakage-url="3" class="btn pacakage_url"> Subscribe Now </a>
+                        <ul>
+                          <li>
+                            <div class="fa fa-check"></div>
+                            Feature 1 </li>
+                          <li>
+                            <div class="fa fa-check"></div>
+                            Feature 2 </li>
+                          <li>
+                            <div class="fa fa-check"></div>
+                            Feature 3 </li>
+                          <li>
+                            <div class="fa fa-check"></div>
+                            Feature 4 </li>
+                          <li>
+                            <div class="fa fa-check"></div>
+                            Feature 5 </li>
+                          <li>
+                            <div class="fa fa-check"></div>
+                            Feature 6 </li>
+                          <li>
+                            <div class="fa fa-check"></div>
+                            Feature 7 </li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- end: PAGE CONTENT--> 
+      </div>
+    </div>
+    <!-- end: PAGE --> 
+  </div>
+  <!-- end: MAIN CONTAINER -->
+  <input value="0" id="no_record" type="hidden">
+  <div class="footer clearfix">
+    <div class="footer-inner"> 2013 © </div>
+    <div class="footer-items"> <span class="go-top"><i class="clip-chevron-up"></i></span> </div>
+  </div>
+  <!-- end: FOOTER --> 
+  <!-- start: FOOTER -->
+  
+  <style>
+.activity_success{
+	background-color: #5cb85c;
+    font-size: 20px;
+    margin-right: 7px !important;
+    padding: 3px 9px !important;
+	color:#fff;
+	float:left;
+}
+.activity_error{
+	background-color: #d9534f;
+	font-size: 20px;
+    margin-right: 7px !important;
+     padding: 3px 9px !important;
+	color:#fff;
+	float:left;
+}
+.activity_message{
+	float:left;
+	width:80%;
+}
+.activeity_time{
+	float:right !important;
+	width:50%;
+	text-align:right;
+}
+.activeity_name{
+	float:left !important;
+	width:50%;
+	text-align:left;
+}
+
+</style>
+  <div class="loading" style="display:none;">Loading…</div>
+  <link type="text/css" rel="stylesheet" href="assets/loader.css">
+</div>
+</body>
+<!-- end: BODY -->
+</html>
